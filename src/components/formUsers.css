@@ -1,0 +1,65 @@
+.Content__Form {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    backdrop-filter: blur(1px);
+    top: 0;
+    transition: transform 150ms ease;
+}
+.Closed {
+    transform: scale(0);
+}
+
+.Form {
+    background-color: var(--colorBg);
+    width: 250px;
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    gap: 1.2em;
+    position: relative;
+    box-shadow: 0px 0px 10px var(--colorShadowForm);
+    border-radius: 4px;
+}
+
+.Content__Form input {
+    background-color: var(--colorBgForm);
+    border: 1px solid var(--colorBorderForm);
+    border-radius: .3em;
+    padding: .4em .5em;
+    width: 100%;
+}
+
+.Form__Btn {
+    padding: .5em 0;
+    color: var(--colorBtnPurple);
+    background: var(--colorBg);
+    margin: .4em;
+    border: 1px solid var(--colorBtnPurple);
+    box-shadow: inset 0px 0px 5px var(--colorBtnPurple) !important;
+    transition: background .5s, color .5s, box-shadow .6s;
+}
+.Form__Btn:hover{
+    /* transform: scale(1.05); */
+    background: var(--colorBtnPurple);
+    color: var(--colorBg);
+    border: 1px solid var(--colorBtnBorderPurple);
+    box-shadow: 0px 0px 5px var(--colorBtnBorderPurple);
+}
+
+.bxs-x-circle {
+    cursor: pointer;
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.bxs-x-circle:hover {
+    color: var(--colorBtnRed);
+}

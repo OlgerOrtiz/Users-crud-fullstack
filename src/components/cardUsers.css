@@ -1,0 +1,87 @@
+.CardsUsers__Content {
+    min-width: 250px;
+    width: 95%;
+    max-width: 320px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    box-shadow: 0px 0px 5px var(--colorCardTitle);
+    border-radius: 4px;
+}
+
+.CardUser__Name {
+    color: var(--colorCardTitle);
+    text-transform: lowercase;
+    margin-bottom: .5em;
+}
+
+.CardUser__Name::first-line {
+    text-transform: capitalize;
+}
+
+.CardUser__Info {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-transform: lowercase;
+}
+
+.Info__List {
+    display: flex;
+    flex-direction: column;
+    gap: .2em;
+}
+
+.Info__Label {
+    color: var(--colorTextLabel);
+    text-transform: uppercase;
+}
+
+.Info__Input {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.CardUser__Icons {
+    display: flex;
+    justify-content: end;
+    gap: 1em;
+}
+
+.bxs-trash {
+    padding: .3em;
+    color: var(--colorBtnRed);
+    background-color: var(--colorBtnText);
+    border-radius: .2em;
+    border: 1px solid var(--colorBtnRed);
+    transition: background .5s, color .5s, border .5s;
+    box-shadow: inset 0px 0px 5px var(--colorBtnRed);
+    cursor: pointer;
+}
+
+.bxs-trash:hover {
+    color: var(--colorBtnText);
+    background-color: var(--colorBtnRed);
+    border: 1px solid var(--colorBtnBorderRed);
+    box-shadow: inset 0px 0px 5px var(--colorBtnBorderRed);
+}
+
+.bx-edit-alt {
+    color: var(--colorBtnPurple);
+    padding: .3em;
+    border-radius: .2em;
+    border: 1px solid var(--colorBtnPurple);
+    box-shadow: inset 0px 0px 5px var(--colorBtnPurple);
+    transition: background .5s, color .5s, border .5s;
+    cursor: pointer;
+}
+
+.bx-edit-alt:hover {
+    color: var(--colorBtnText);
+    background-color: var(--colorBtnPurple);
+    border-color: var(--colorBtnBorderPurple);
+    box-shadow: inset 0px 0px 5px var(--colorBtnBorderPurple);
+}

@@ -1,0 +1,49 @@
+.App {
+    background-color: var(--colorBg);
+    height: 100%;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-top: 2em;
+    position: relative;
+}
+.App__Header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    top: 2em;
+    right: 10%;
+    left: 10%;
+    position: absolute;
+}
+.Header__Title {
+    font-size: 2rem;
+}
+
+.App__Container--CardUsers{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    margin: auto ;
+    margin-top: 4em;
+}
+
+.Header__Btn {
+    width: 150px;
+    aspect-ratio: 3.5;
+    background-color: var(--colorBtnPurple);
+    color: var(--colorBtnText);
+}
+.Header__Btn:hover {
+    background-color: var(--colorBtnBorderPurple);
+}
+
+

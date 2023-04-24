@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+  --colorBg: #ffffff;
+  --colorBgForm: #F9FAFC;
+  --colorBorderForm: #C3C1C1;
+  --colorTextLabel: #C3C1C1;
+  --colorBtnPurple: #7066e0 ;
+  --colorBtnBorderPurple: #554e9c ;
+  --colorBtnRed: #d14343 ;
+  --colorBtnBorderRed: #853636 ;
+  --colorBtnText: #ffffff; 
+  --colorCardTitle: #555A88;
+  --colorShadowForm: #555A88;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  vertical-align: baseline;
+}
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center, center;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+
+p a {
+  display: inline;
+}
+i{
+  display: block;
+  font-size: 20px;
+}
+hr {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+li {
+  list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+form,
+input,
+textarea,
+select,
+button,
+label {
+  font-family: inherit;
+  font-size: inherit;
+  hyphens: auto;
+  display: block;
+  color: inherit;
+  appearance: none;
+}
+button{
+  cursor: pointer;
+}
+input {
+  outline: none;
+}
+
+svg {
+  width: 100%;
+  display: block;
+  fill: currentColor;
+}
+
+body {
+  min-height: 100vh;
+  font-size: 100%;
+  font-smooth: always;
+  -wekit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+

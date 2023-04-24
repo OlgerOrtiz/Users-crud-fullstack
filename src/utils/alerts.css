@@ -1,0 +1,59 @@
+.Alert__ImageIcon {
+    width: 20%;
+    aspect-ratio: 1;
+    margin: 1em auto 0 auto !important;
+}
+
+.Alert__Btn--Confirm {
+    color: var(--colorBtnPurple) !important;
+    background: var(--colorBg) !important;
+    border: 1px solid var(--colorBtnPurple) !important;
+    transition: background .5s, color .5s, box-shadow .6s !important;
+}
+
+.Alert__Btn--Confirm:hover {
+    background: var(--colorBtnPurple) !important;
+    color: var(--colorBtnText) !important;
+    border: 1px solid var(--colorBtnBorderPurple) !important;
+    box-shadow: 0px 0px 5px var(--colorBtnBorderPurple),
+        inset 0px 0px 5px var(--colorBtnBorderPurple) !important;
+}
+
+.Alert__Btn--Confirm:focus {
+    box-shadow: inset 0px 0px 5px var(--colorBtnPurple) !important;
+}
+
+.Alert__Btn--Confirm:focus:hover {
+    box-shadow: inset 0px 0px 5px var(--colorBtnPurple),
+        0px 0px 5px var(--colorBtnBorderPurple) !important;
+}
+
+.Alert__Btn--Cancel {
+    color: var(--colorBtnRed) !important;
+    background: var(--colorBg) !important;
+    border: 1px solid var(--colorBtnRed) !important;
+    transition: background .5s, color .5s, box-shadow .6s, border .6s !important;
+}
+
+.Alert__Btn--Cancel:hover {
+    color: var(--colorBtnText) !important;
+    background: var(--colorBtnRed) !important;
+    border: 1px solid var(--colorBtnBorderRed) !important;
+    box-shadow: 0px 0px 5px var(--colorBtnBorderRed),
+        inset 0px 0px 5px var(--colorBtnBorderRed) !important;
+}
+
+.Alert__Btn--Cancel:focus {
+    box-shadow: inset 0px 0px 5px var(--colorBtnRed) !important;
+}
+
+.Alert__Btn--Cancel:focus:hover {
+    box-shadow: inset 0px 0px 5px var(--colorBtnPurple),
+        0px 0px 5px var(--colorBtnBorderPurple) !important;
+}
+
+
+.Alert__Success--Title {
+    color: rgb(100, 185, 100) !important;
+    margin-bottom: 1em !important;
+}
