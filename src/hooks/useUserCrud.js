@@ -5,7 +5,7 @@ const useUserCrud = () =>{
 
     const [users, setUsers] = useState()
 
-    const urlUsers = `https://users-crud-test.onrender.com/api/v1`
+    const urlUsers = `https://users-crud-test.onrender.com/api/v1/users`
     
     const getAllUsers = () => {
         axios.get(urlUsers)
@@ -20,14 +20,14 @@ const useUserCrud = () =>{
     }
 
     const deleteUserById = id => {
-        const urlDelete = `${urlUsers}${id}/`
+        const urlDelete = `${urlUsers}/${id}`
         axios.delete(urlDelete)
         .then(() => getAllUsers())
         .catch(err => console.log(err))
     }
 
     const updateUserById = (id, data) => {
-        const urlUpdate = `${urlUsers}${id}/`
+        const urlUpdate = `${urlUsers}/${id}`
         axios.put(urlUpdate, data)
         .then(() => {
             getAllUsers()
