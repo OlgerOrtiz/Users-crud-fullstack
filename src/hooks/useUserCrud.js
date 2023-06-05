@@ -1,12 +1,11 @@
 import axios from "axios"
 import { useState } from "react"
-import alertUpdate from "../utils/alertOpenFormUpdate"
 
 const useUserCrud = () =>{
 
     const [users, setUsers] = useState()
 
-    const urlUsers = `https://users-crud.academlo.tech/users/`
+    const urlUsers = `https://users-crud-test.onrender.com/api/v1`
     
     const getAllUsers = () => {
         axios.get(urlUsers)
